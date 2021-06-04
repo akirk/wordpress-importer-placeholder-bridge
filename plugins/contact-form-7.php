@@ -1,7 +1,7 @@
 <?php
 add_filter( 'wp_import_object_placeholder', function( $placeholder, $type, $data ) {
 	if (
-		'http://wordpress.org/export/objects/contact-form/1.0/' !== $type
+		'contact-form' !== $type
 		|| ! isset( $data['fields'] )
 	) {
 		return $placeholder;
